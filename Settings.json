@@ -1,0 +1,22 @@
+{
+    "Settings": {
+        "distance_for_two_target": 80,
+        "player_offset_massive_y": 10,
+        "player_offset_massive_x": 12,
+        "pixel_massive_x": [
+            60,
+            185,
+            310,
+            430,
+            555,
+            675
+        ],
+        "pixel_massive_y": [
+            60,
+            185,
+            310,
+            430,
+            555
+        ]
+    }
+}
