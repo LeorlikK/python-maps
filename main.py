@@ -75,7 +75,6 @@ class Player:
         'top': 0,
         'width': 1920,
         'height': 1080,
-
     }
 
     def __init__(self):
@@ -641,14 +640,14 @@ class Player:
     @staticmethod
     def all_func():
         while True:
-            xyi = None
-            while not xyi:
+            xyz = None
+            while not xyz:
                 #print("Ищу персонажа на эркане...")
                 player.screen_monitor()
-                xyi = player.find_load_img(player.player_screen_v1, 0.6, 20, 30)
-                if not xyi:
-                    xyi = player.find_load_img(player.player_screen_v2, 0.6, 20, 30)
-            if xyi:
+                xyz = player.find_load_img(player.player_screen_v1, 0.6, 20, 30)
+                if not xyz:
+                    xyz = player.find_load_img(player.player_screen_v2, 0.6, 20, 30)
+            if xyz:
                 try:
                     player.mask()
                     player.column()
@@ -666,10 +665,10 @@ class Player:
                     player.wave_revers(step_wave=player.test_massive[3])
                     player.key(command=player.interpreter())
                 except:
-                    xyi = None
+                    xyz = None
                     player.close()
                 player.close()
-                xyi = None
+                xyz = None
                 time.sleep(1)
 
 
